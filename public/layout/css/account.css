@@ -1,0 +1,208 @@
+/* Set a style for all buttons */
+.acc button {
+    background-color: #3498DB;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.25s all;
+    -webkit-transition: 0.25s all;
+    -o-transition: 0.25s all;
+    -moz-transition: 0.25s all;
+    -ms-transition: 0.25s all;
+}
+
+.acc button:hover {
+    color: #3498db;
+    font-weight: 500;
+    background: #F5F5F5;
+    padding-left: 1em;
+    padding-right: 1em;
+    transition: 0.25s all;
+    -webkit-transition: 0.25s all;
+    -o-transition: 0.25s all;
+    -moz-transition: 0.25s all;
+    -ms-transition: 0.25s all;
+}
+
+/* Bordered form */
+.modal form {
+    color: #348ADB;
+    width: 30%;
+    border: 3px solid #f1f1f1;
+    transition: 0.25s all;
+    -webkit-transition: 0.25s all;
+    -o-transition: 0.25s all;
+    -moz-transition: 0.25s all;
+    -ms-transition: 0.25s all;
+}
+
+.modal form:hover, .modal form:focus{
+    color: #23527C;
+    text-decoration: none;
+    transition: 0.25s all;
+    -webkit-transition: 0.25s all;
+    -o-transition: 0.25s all;
+    -moz-transition: 0.25s all;
+    -ms-transition: 0.25s all;
+}
+
+.acc .container{
+    padding: 1em;
+    clear: both;
+}
+
+.acc .container p label{
+    margin-left: 1em;
+    margin-top: 0.5em;
+    width: 5em;
+}
+
+.acc img.avatar {
+    width: 20%;
+    border-radius: 20%;
+}
+
+/* Full-width input fields */
+.acc .container input[type=text],.acc .container input[type=password] {
+    width: 70%;
+    padding: 0.2em 0.3em;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Login Button */
+.acc .container .logbtn{
+    background-color: #3498DB;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    padding: 0.5em;
+    margin-top: 1em;
+    margin-left: 35%;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+
+.acc .container .logbtn:hover {
+    font-weight: normal;
+    background: rgba(52,152,219,0.9);
+    padding-left: 1em;
+    padding-right: 1em;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+
+.acc .container input[type=checkbox]{
+    margin: 1em 0.5% 0 2%;
+}
+
+/* Extra styles for the cancel button */
+.acc .cancelbtn {
+    width: auto;
+    margin-left: 2%;
+    padding: 0.5em 1em;
+    background-color: rgba(52,152,219,0.6);
+}
+
+.acc .cancelbtn:hover{
+    font-weight: normal;
+    color: #F5F5F5;
+    padding: 0.5em 1em;
+    background-color: rgba(52,152,219,0.9);
+}
+
+/* Center the image and position the close button */
+.acc .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    /* position: relative; */
+}
+
+.acc span.psw {
+    padding-top: 0.5em;
+    float: right;
+}
+
+/* The Modal (background) */
+.acc .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 3; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 5em;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 4% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.acc .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.acc .close:hover,
+.acc .close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+#modal_login > form > .container > p > span{
+    float: right;
+    padding-top: 0.9em;
+}
+#modal_register > form > .container > span{
+    float: right;
+    padding-top: 0.5em;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: left;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
